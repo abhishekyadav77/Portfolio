@@ -215,7 +215,7 @@ const DATA = {
         "https://medkart-online-pharmacy-management.vercel.app/",
 
       github:
-        "https://github.com/abhishekyadav77"
+        "https://github.com/abhishekyadav77/Medkart-Online-Pharmacy-Management-System-"
     },
 
     {
@@ -241,7 +241,7 @@ const DATA = {
         "https://devverse-three.vercel.app/",
 
       github:
-        "https://github.com/abhishekyadav77"
+        "https://github.com/abhishekyadav77/Devverse"
     },
 
     {
@@ -267,11 +267,11 @@ const DATA = {
         "https://face-identification-software-dafo.onrender.com",
 
       github:
-        "https://github.com/abhishekyadav77"
+        "https://github.com/abhishekyadav77/Face-Identification-Software"
     },
 
     {
-      title: "AI-Powered Carbon Footprint Calculator",
+      title: "Carbon Footprint Calculator",
 
       tech: [
         "Python",
@@ -292,7 +292,7 @@ const DATA = {
         "https://carbon-footprint-calculator-eqng.onrender.com",
 
       github:
-        "https://github.com/abhishekyadav77"
+        "https://github.com/abhishekyadav77/Carbon-Footprint-Calculator"
     },
 
     {
@@ -314,7 +314,7 @@ const DATA = {
 
       status: "Building",
 
-      live: "",
+      live: "https://github.com/abhishekyadav77",
 
       github:
         "https://github.com/abhishekyadav77"

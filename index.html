@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Abhishek Kumar Yadav - B.Tech CSE | Full-Stack Developer. Projects, resume, skills and contact."
+  >
+
+  <meta name="theme-color" content="#0e1013">
+
+  <meta property="og:title" content="Abhishek Kumar Yadav | Portfolio">
+  <meta
+    property="og:description"
+    content="B.Tech CSE | Full-Stack Developer. Projects, resume and contact."
+  >
+  <meta property="og:type" content="website">
+
+  <title>Abhishek Kumar Yadav | Portfolio</title>
+
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23ffdb70'/%3E%3Ctext x='50' y='68' font-size='56' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%230e1013'%3EA%3C/text%3E%3C/svg%3E"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Sora:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    /* Apply saved theme before paint to avoid a flash */
+    try {
+      const t = localStorage.getItem("theme");
+
+      if (t) {
+        document.documentElement.dataset.theme = t;
+      }
+    } catch (e) {}
+  </script>
+</head>
+
+<body>
+
+  <a class="skip" href="#content">Skip to content</a>
+
+  <main>
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+      <div class="sidebar-top">
+
+        <img
+          class="avatar"
+          id="avatar"
+          alt=""
+          width="120"
+          height="120"
+        >
+
+        <div class="info">
+          <h1 id="name"></h1>
+          <p class="role" id="role"></p>
+        </div>
+
+        <button
+          class="toggle"
+          id="toggle"
+          aria-expanded="false"
+          aria-controls="more"
+          type="button"
+        >
+          Show contacts
+        </button>
+
+      </div>
+
+      <div class="sidebar-more" id="more">
+
+        <ul class="contacts" id="contacts"></ul>
+
+        <ul class="socials" id="socials"></ul>
+
+      </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <div class="main">
+
+      <!-- =========================
+           NAVIGATION
+      ========================== -->
+
+      <nav class="nav" aria-label="Main navigation">
+
+        <div
+          class="tabs"
+          id="nav"
+          role="tablist"
+        >
+
+          <button
+            role="tab"
+            data-page="about"
+            type="button"
+          >
+            About
+          </button>
+
+          <button
+            role="tab"
+            data-page="resume"
+            type="button"
+          >
+            Resume
+          </button>
+
+          <button
+            role="tab"
+            data-page="portfolio"
+            type="button"
+          >
+            Projects
+          </button>
+
+          <button
+            role="tab"
+            data-page="blog"
+            type="button"
+          >
+            Blog
+          </button>
+
+          <button
+            role="tab"
+            data-page="contact"
+            type="button"
+          >
+            Contact
+          </button>
+
+        </div>
+
+        <button
+          class="theme"
+          id="theme"
+          type="button"
+          aria-label="Switch to light theme"
+        ></button>
+
+      </nav>
+
+
+      <!-- =========================
+           PAGE CONTENT
+      ========================== -->
+
+      <div id="content">
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <article
+          class="page"
+          data-page="about"
+          role="tabpanel"
+        >
+
+          <section class="hero">
+
+            <p class="status" id="status">
+              <i class="pulse"></i>
+              <span></span>
+            </p>
+
+            <h2 id="tagline"></h2>
+
+            <div id="about-text"></div>
+
+
+            <!-- =========================
+                 CTA BUTTONS
+            ========================== -->
+
+            <div class="cta">
+
+              <button
+                class="btn primary"
+                type="button"
+                data-go="portfolio"
+              >
+                View projects
+              </button>
+
+              <a
+                class="btn"
+                href="assets/resume/Abhishek_Kumar_Yadav_Resume.pdf"
+                download="Abhishek_Kumar_Yadav_Resume.pdf"
+              >
+                Download resume
+              </a>
+
+              <a
+                class="btn"
+                href="mailto:yadavvikky012@gmail.com?subject=Portfolio%20Inquiry"
+              >
+                Email me
+              </a>
+
+            </div>
+
+          </section>
+
+
+          <!-- =========================
+               SERVICES
+          ========================== -->
+
+          <h3>What I do</h3>
+
+          <ul
+            class="cards"
+            id="services"
+          ></ul>
+
+        </article>
+
+
+        <!-- =========================
+             RESUME
+        ========================== -->
+
+        <article
+          class="page"
+          data-page="resume"
+          role="tabpanel"
+        >
+
+          <div class="resume-header">
+
+            <h2>Resume</h2>
+
+            <a
+              class="btn primary"
+              href="assets/resume/Abhishek_Kumar_Yadav_Resume.pdf"
+              download="Abhishek_Kumar_Yadav_Resume.pdf"
+            >
+              Download resume
+            </a>
+
+          </div>
+
+
+          <h3>Education</h3>
+
+          <ol
+            class="timeline"
+            id="education"
+          ></ol>
+
+
+          <h3>Experience</h3>
+
+          <ol
+            class="timeline"
+            id="experience"
+          ></ol>
+
+
+          <h3>Training and recognition</h3>
+
+          <ol
+            class="timeline"
+            id="training"
+          ></ol>
+
+
+          <h3>Certifications</h3>
+
+          <ol
+            class="timeline"
+            id="certifications"
+          ></ol>
+
+
+          <h3>Skills</h3>
+
+          <ul
+            class="skills"
+            id="skills"
+          ></ul>
+
+        </article>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <article
+          class="page"
+          data-page="portfolio"
+          role="tabpanel"
+        >
+
+          <h2>Projects</h2>
+
+          <div
+            class="filters"
+            id="filters"
+            role="group"
+            aria-label="Filter projects"
+          ></div>
+
+          <ul
+            class="projects"
+            id="projects"
+          ></ul>
+
+        </article>
+
+
+        <!-- =========================
+             BLOG
+        ========================== -->
+
+        <article
+          class="page"
+          data-page="blog"
+          role="tabpanel"
+        >
+
+          <h2>Blog</h2>
+
+          <div
+            class="blog-posts"
+            id="blog-coming-soon"
+          ></div>
+
+        </article>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <article
+          class="page"
+          data-page="contact"
+          role="tabpanel"
+        >
+
+          <h2>Contact</h2>
+
+          <p class="lead">
+            I'm currently open to software development opportunities,
+            internships, and collaborative projects.
+          </p>
+
+
+          <form
+            id="form"
+            novalidate
+          >
+
+            <div class="row">
+
+              <label>
+                Full name
+
+                <input
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                >
+
+              </label>
+
+
+              <label>
+                Email address
+
+                <input
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                >
+
+              </label>
+
+            </div>
+
+
+            <label>
+              Message
+
+              <textarea
+                name="message"
+                required
+              ></textarea>
+
+            </label>
+
+
+            <p
+              class="form-error"
+              id="form-error"
+              role="alert"
+            ></p>
+
+
+            <button
+              class="btn primary send"
+              type="submit"
+            >
+              Send message
+            </button>
+
+          </form>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- =========================
+       TOAST
+  ========================== -->
+
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+  ></div>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
